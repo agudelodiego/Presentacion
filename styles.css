@@ -118,6 +118,11 @@ body{
     list-style: none;
     margin-top: 8px;
     padding: 0;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.habilidades-hidden{
+    opacity: 0;
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -131,7 +136,7 @@ body{
 .contenido{
     z-index: 10;
     grid-area: 'contenido';
-    width: 950px;
+    width: 900px;
     height: 650px;
     margin-right: auto;
     margin-left: auto;
@@ -173,7 +178,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     position: absolute;
-    transition: opacity 1s, display;
+    transition: opacity 1s;
 }
 .slider__divFoto:target{
     opacity: 1;
