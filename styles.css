@@ -82,9 +82,12 @@ body{
     height: 34px;
     width: auto;
 }
-.foto__titulo{
+.titulo{
     font-size: var(--md);
     color: var(--light-green);
+}
+.titulo-centrado{
+    text-align: center;
 }
 .foto__descripcion{
     width: 200px;
@@ -95,11 +98,11 @@ body{
 }
 .boton__container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
 }
 .boton{
-    width: 140px;
+    width: 200px;
     height: 52px;
     max-width: auto;
     color: var(--white);
@@ -126,7 +129,15 @@ body{
 /* *Estilos para el contenido principal */
 
 .contenido{
+    z-index: 10;
     grid-area: 'contenido';
+    width: 950px;
+    height: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -137,4 +148,70 @@ body{
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* *Estilos para los sliders */
 
+.slider__container{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.slider__content{
+    width: 650px;
+    height: 350px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.slider__divFoto{
+    width: 650px;
+    height: 400px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    transition: opacity 1s, display;
+}
+.slider__divFoto:target{
+    opacity: 1;
+}
+/* .slider__content-show{
+    opacity: 1;
+} */
+.slider__fotos{
+    width: 650px;
+    height: 400px
+}
+
+.slider__boton{
+    background-color: var(--light-green);
+    border-radius: 50%;
+    color: var(--white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.video{
+    width: 650px;
+    height: 350px;
+    border-radius: 14px;
+}
+.img__small{
+    width: 180px;
+    height: auto;
+}
+.slider__imgsCont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider__content-small{
+    width: 230px;
+    height: auto;
+}
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
