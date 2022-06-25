@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="forzarSlider()">
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -108,8 +108,8 @@
                     </section>
                     <div class="slider__botonsContainer">
                         <a href="#1" class="slider__boton"><span>1</span></a>
-                        <a href="#2" class="slider__boton"><span>2</span></a>
-                        <a href="#3" class="slider__boton"><span>3</span></a>
+                        <a href="#2" onclick="desForzar()" class="slider__boton"><span>2</span></a>
+                        <a href="#3" onclick="desForzar()" class="slider__boton"><span>3</span></a>
                     </div>
                 </section>
             </article>
