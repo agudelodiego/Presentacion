@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+
+    <!-- Normalizacion de estilos -->
+    <link rel="stylesheet" href="./normalize.css">
+
+    <!-- Link a la hoja de estilos -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Link a la hoja de estilos de la barra de nabegacion -->
+    <link rel="stylesheet" href="./navBar.css">
+
+    <!-- Link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__div navbar__div-inconMenuHidde">
+            <a href="/" class="navbar__link">
+                <img src="./Icons/menu.png" class="iconMenu" alt="icon menu">
+            </a>   
+        </div>
+        <div class="navbar__div navbar__div-navigator">
+            <ul class="navbar__ul navbar__ul-hidde">
+                <li class="navbar__li">
+                    <a href="/" class="navbar__link navbar__link-hover">Momentos</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="/" class="navbar__link navbar__link-hover">Presente</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="/" class="navbar__link navbar__link-hover">Futuro</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="/" class="navbar__link navbar__link-hover">Hobbies</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar__logosContainer">
+                <div>
+                    <img src="./Icons/css-3.png" alt="Incon css" class="logo">
+                </div>
+                <div>
+                    <img src="./Icons/html-5.png" alt="Incon html" class="logo">
+                </div>
+                <div>
+                    <img src="./Icons/js.png" alt="Incon javascript" class="logo">
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <section class="asideBar">
+            <figure class="asideBar__foto">
+                <div class="asideBar__fotoContainer">
+                    <img src="./Images/MiFoto.jpg" alt="Mi foto de perfil" class="foto">
+                </div>
+                <figcaption class="foto__descripcion">
+                    <h1 class="foto__titulo">Diego Agudelo</h1>
+                    <img src="./Icons/programacion.png" alt="Programing Icon" class="icon">
+                </figcaption>
+            </figure>
+            <article class="asideBar__content">
+                <h2 class="asidebar__title">Desarrollador fornt-end</h2>
+                <p>Soy estudiante de ultimo semestre de tecnología electrónica en itm</p>
+                <div class="aside__div">
+                    <div class="boton__container">
+                        <a href="/" class="boton">Habilidades</a>
+                    </div>
+                    <ul class="habilidades">
+                        <li class="habilidades-item">Html</li>
+                        <li class="habilidades-item">Css</li>
+                        <li class="habilidades-item">Java Script</li>
+                        <li class="habilidades-item">C++</li>
+                        <li class="habilidades-item">Arduino</li>
+                        <li class="habilidades-item">Python</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="contenido">
+            <article>
+                <h2>Momentos mas signifativos</h2>
+                <section class="slider__container">
+                    <div class="slider__arrow" id="izquierda">
+                        <img src="./Icons/circle-arrow-right-solid.svg" alt="Icono de flecha derecha">
+                    </div>
+                    <section class="slider__fotos">
+                        <img src="./Images/Brazo.jpg" alt="Brazo robotico" class="slider__content" id="1">
+                        <img src="./Images/Familia.jpeg" alt="Brazo robotico" class="slider__content" id="2">
+                    </section>
+                    <div class="slider__arrow" id="derecha">
+                        <img src="./Icons/circle-arrow-left-solid.svg" alt="Icono de flecha izquierda">
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
